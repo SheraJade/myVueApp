@@ -8,6 +8,10 @@ import CampusLife from '../views/CampusLife.vue'
 import News from '../views/News.vue'
 import Contact from '../views/Contact.vue'
 import PortalLogin from '../views/PortalLogin.vue'
+import SampleData from '../views/SampleData.vue'
+import SampleMethods from '../views/SampleMethods.vue'
+import SampleVmodel from '../views/SampleVmodel.vue'
+
 
 const router = createRouter({
   history: createWebHistory(),
@@ -50,7 +54,21 @@ const router = createRouter({
     },
     {path: '/portal-login',
       name: 'portallogin',
-      component: PortalLogin}
+      component: PortalLogin},
+    {
+      path: '/sample-data', 
+      name: 'sampleData', 
+      component: SampleData },
+    {
+    path: '/sample-methods',
+    name: 'sampleMethods',
+    component: SampleMethods
+    },
+    {
+  path: '/sample-vmodel',
+  name: 'sampleVmodel',
+  component: SampleVmodel
+}
 
   ]
 })
